@@ -10,14 +10,105 @@
     <link rel="icon" href="img/favicon.ico" />
   </head>
   <body>
-    <div class="hero min-h-screen bg-base-200">
-      <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="img/fastapi.svg" class="w-36 rounded-lg md:ml-5 lg:ml-5" alt="FastAPI" />
-        <div>
-          <h1 class="text-5xl font-bold">lark 포트폴리오!!</h1>
-          <p class="py-6">클라우드타입에서 배포한 FastAPI 어플리케이션입니다.</p>
-        </div>
+    <div class="top-warpper">
+      <button class="btn">1번 버튼</button>
+      <button class="btn">2번 버튼</button>
+    </div>
+    <div class="section-warpper">
+      <p class="title">프로필 : {이름}</p>
+      <div class="content">
+        <img src="https://magazine.brique.co/wp-content/uploads/2019/04/%EA%B9%80%ED%98%84%EC%84%9D-%ED%94%84%EB%A1%9C%ED%95%84-%EC%82%AC%EC%A7%84-%EC%A0%95%EC%82%AC%EA%B0%812-e1555860216706.jpg" alt="profile" />
+      </div>
+    <div class="section-warpper">
+      <p class="title">Skill : 코드 스택</p>
+      <div class="content">
+        <div class="bar" style="width: 80%;">HTML/CSS</div>
+        <div class="bar" style="width: 70%;">JavaScript</div>
+        <div class="bar" style="width: 60%;">Python</div>
       </div>
     </div>
+
+    <div class="text">안녕하세요!!</div>
   </body>
+  <style>
+   
+    .text:hover {
+      background: white;
+      height: 250px;
+    }
+
+    * {
+      /* border: 1px solid black; */
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      background-color: white;
+    }
+    .top-warpper {
+      padding: 20px 0;
+      width: 400px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section-warpper {
+      width: 400px;
+      margin: auto;
+    }
+    .btn {
+      display: block;
+      padding: 10px 50px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      background-color: lightgray;
+      color: white;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #5fdcf0;
+      color: black;
+    }
+    .title {
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+    .content img {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+    }
+    .bar {
+      /* display: inline-block; */
+      width: 200px;
+      height: 20px;
+      background-color: #5fdcf0;
+      margin-bottom: 10px;
+      color: white;
+        }
+
+    .text {
+      color: red; /* 글자 색상  */
+      font-size: 20px;  /* 글자 크기 : px */
+      font-weight: 700; /* 글자 두깨 : 100단위 */
+      text-align: center; /* 글자 정렬 : left center */
+
+      background: #f9de0f; /* 배경색 : #헥스코드 */
+      padding: 20px; /* 내부 여백  */
+      margin: 20px; /* 외부 여백  */
+      border: 3px solid red; /* 테두리  */
+      border-radius: 10px; /* 라운드 모서리  */
+
+      width: 400px; /* 넓이  */
+      height: 80px; /* 높이  */
+      cursor: pointer; /* 폰인터 모양  */
+      transition: 1s; /* 상태 변할 때 시간  */
+    }
+  </style>
 </html>
